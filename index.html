@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="js/p5.js"></script>
+		<script src="js/p5.sound.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--canvas fonts-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bad+Script&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Grenze&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<!--html fonts-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Sans&amp;display=swap"
+			rel="stylesheet"
+		/>
+
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<header>
+			<p>
+				Character:
+				<input
+					type="text"
+					name="character"
+					id="character"
+					value="Harry Potter"
+				/>
+				<button id="submit">submit</button>
+				<button id="randomID">random</button>
+			</p>
+		</header>
+		<div id="sketch-holder">
+			<script src="js/sketch.js"></script>
+			<!-- canvas -->
+		</div>
+		<div id="main">
+			<h1 id="pagetitle">The Harry Potter API</h1>
+			<div id="task">
+				<h2>Task:</h2>
+				<p>
+					By using a publicly available dataset, or one of your own making, we
+					would like you to develop an application showcasing your development
+					capabilities. The application functionality can be anything you wish
+					to develop but should include data retrieval, manipulation and
+					presentation.
+				</p>
+			</div>
+			<div id="description">
+				<h2>My Application:</h2>
+				<p>
+					In this application, users can search for characters from the Harry
+					Potter novels and have information relayed back to them in a clear but
+					aesthetically pleasing way. <br />
+					To make this happen I used the Harry Potter API. This API returns JSON
+					data holding information about characters such as their Name, Hogwarts
+					House, Species and more.<br />
+					Through the use of the input textbox, users can search for their
+					favourite characters. By clicking the 'submit' button the textbox
+					content it adding to a skeleton URL and JSON data is then returned and
+					printed in a readable manner. They can also choose to have a random
+					character selected for them.<br />
+					Also, see how the card background changes based on the character's
+					Hogwarts House!
+				</p>
+			</div>
+			<div id="improvements">
+				<p>Future improvements I'd like to make:</p>
+				<ul>
+					<li>Create card game based on character information</li>
+					<li>Include images</li>
+					<li>Make an API completely from scratch for use in my application</li>
+				</ul>
+			</div>
+			<div id="techlist">
+				<p>Technologies used:</p>
+				<ul>
+					<li>HTML, CSS, JavaScript</li>
+					<li><a href="https://p5js.org/">P5.js Library</a></li>
+					<li><a href="https://potterapi.com/"> The Potter API</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
